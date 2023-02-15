@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem 220px 0 220px;
+    font-family: 'lexend deca', cursive;
+}
+
+main {
+    padding: 0 0;
+    font-family: 'lexend deca', cursive;
+}
+
+.menu-navbar {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+
+    height: 100px;
+    border-bottom: 1px solid hsl(219, 9%, 45%);
+}
+
+.navbar-right {
+    display: flex;
+
+    width: 30%;
+    justify-content: end;
+    align-items: center;
+
+
+}
+
+.navbar-left {
+    display: flex;
+
+    width: 70%;
+    align-items: center;
+
+}
+
+.nav-links {
+    margin-left: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-link {
+    margin-left: 0.5rem;
+    color: rgba(78, 77, 90, 0.63);
+}
+
+.image-avatar-container {
+    width: 50px;
+    margin-left: 1rem;
+}
+
+.image-avatar-container img {
+    width: 50px;
+    height: 50px;
+}
+
+.main-left {
+   
+    height: 600%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.main-right {
+    
+    height: 600%;
+    width: 50%;
+}
+
+main {
+    display: flex;
+    margin-top: 5rem;
+
+
+
+}
+
+.main-left-hearder {
+    width: 90%;
+    border-radius: 2rem;
+
+}
+
+.main-left-hearder img {
+    width: 100%;
+    height: 35rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.main-left-footer {
+    
+    display: flex;
+    width: 85%;
+    margin-top: 0.5rem;
+
+
+
+
+}
+
+.main-left-footer-img img {
+
+    border-radius: 1rem;
+    width: 90%;
+    height: 8rem;
+    margin-left: 1.2rem;
+
+}
+
+.company-name {
+    
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+
+.product-name {
+    font-size: clamp(1.9rem, 10vw, 2rem);
+    line-height: 2.5rem;
+    padding-bottom: 5%;
+    font-family: 'Big Shoulders Display'
+}
+
+.description {
+    color: hsl(219deg, 9%, 45%);
+    margin-top: 20px;
+    padding-bottom: 5%;
+}
+
+.after-discount {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.discount-percent {
+    color: hsl(26deg, 100%, 55%);
+    font-weight: 700;
+    background-color: hsl(25deg, 100%, 94%);
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    padding-top: 1%;
+    margin-left: 3%;
+
+}
+
+.before-discount {
+    color: hsl(220deg, 14%, 75%);
+    font-weight: 700;
+    display: flex;
+    text-align: left;
+    padding-top: 5%;
+}
+
+.functions {
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 40px;
+}
+
+.amount {
+    position: relative;
+}
+
+.select-amount {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: hsla(243, 41%, 90%, 0.664);
+    padding: 15px 0;
+    color: #000;
+    margin-top: 0px;
+    position: relative;
+}
+
+.controller {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 15px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+
+}
+
+.add-amount {
+    right: 0;
+    padding-top: 2%;
+    position: absolute;
+}
+
+.minus-amount {
+    left: 0;
+    padding-top: 0%;
+    position: absolute;
+}
+
+.add-to-cart {
+    width: 50%;
+    padding: 15px;
+    margin-top: 0px;
+    margin-left: 10%;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(26deg, 100%, 55%);
+    color: white;
+    font-weight: 700;
+    position: relative;
+
+}
+
+.after-percent-discount {
+    display: flex;
+}
+
+.add-to-cart img {
+    position: absolute;
+    left: 15%;
+
+
+}
+
+@media screen and (max-width: 700px) {
+    .menu-navbar {
+        display: flex;
+        margin-right: 1rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    main {
+        display: block;
+    }
+
+    .main-left {
+        width: 100%;
+    }
+
+    .main-right {
+        width: 100%;
+    }
+
+    .functions {
+        display: block;
+    }
+
+    .select-amount {
+        width: 90%;
+        margin-left: 4%;
+        display: flex;
+        position: relative;
+
+    }
+
+    .add-to-cart {
+        width: 80%;
+        margin-top: 4rem;
+        position: relative;
+    }
+    .add-to-cart img{
+        position: absolute;
+        left: 5%;
+
+    }
+
+    .add-amount {
+        right: 5%;
+        padding-top: 0;
+        position: absolute;
+    }
+
+    .minus-amount {
+        left: 5%;
+        padding-top: 0;
+    }
+
+    .main-left-footer-img img {
+
+        border-radius: 1rem;
+        width: 90%;
+        height: 9rem;
+        margin-left: 0rem;
+        display: none;
+
+    }
+    body {
+        padding: 0;
+        font-family: 'lexend deca', cursive;
+    }
+}
